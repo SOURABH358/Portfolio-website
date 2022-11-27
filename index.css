@@ -68,8 +68,13 @@ ul{
     border-radius: 0.4rem;
     cursor: pointer;
 }
+.resume img{
+    height: 1rem;
+}
 .hero__img{
+    opacity: 0;
     width: 45rem;
+    animation: hero__image 1s ease 0.5s 1 forwards;
 }
 .hero__section{
     width: 100%;
@@ -86,11 +91,26 @@ ul{
 .hero__content span{
     color: var(--red);
 }
+.hero__content__title{
+    visibility: hidden;
+    animation: hero__content 1s ease-in-out 0s 1 forwards;
+}
 .hero__content__subtitle{
+    visibility: hidden;
     margin-top: 3rem;
+    margin-left: 2rem;
     line-height: 2rem;
     font-size: 1.5rem;
+    animation: hero__content 1s ease-in-out 0.5s 1 forwards;
 }
+.arrow{
+    background-color: var(--red);
+    position: fixed;
+    top: 20rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
 @media screen and (max-width:600px) {
     .hamburger{
         display: block;
@@ -100,5 +120,30 @@ ul{
         top:10rem;
         left:0rem;
         width: 100%;
+    }
+}
+
+/* Animations */
+
+@keyframes hero__image {
+    from{
+        transform: translateY(-2rem);
+        opacity: 0;
+   }
+   to{
+    transform: translateY(0);
+    opacity: 1;
+   }
+}
+@keyframes hero__content {
+    from{
+        transform: translateX(-3rem);
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
     }
 }
