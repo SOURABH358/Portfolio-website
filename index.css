@@ -72,6 +72,10 @@ ul{
 }
 .hamburger{
     display: none;
+    cursor: pointer;
+}
+.close{
+    display: none;
 }
 .resume{
     background-color: var(--red);
@@ -79,21 +83,23 @@ ul{
     padding: 1rem;
     border-radius: 0.4rem;
     cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
 }
 .resume img{
     height: 1rem;
 }
-.hero__img{
-    opacity: 0;
-    width: 45rem;
-    animation: hero__image 1s ease 0.5s 1 forwards;
-}
+
 .hero__section{
     width: 100%;
     display: flex;
     padding-left: 15%;
     /* align-items: center; */
     gap: 10rem;
+}
+.hero__img{
+    opacity: 0;
+    width: 45rem;
+    animation: hero__image 1s ease 0.5s 1 forwards;
 }
 .hero__content{
     padding-top: 10rem;
@@ -154,11 +160,29 @@ ul{
     .hamburger{
         display: block;
     }
+    .hamburger img{
+        width: 2rem;
+    }
+    .close{
+        display: block;
+    }
+    .close img{
+        width: 2rem;
+    }
     .navbar__section{
-        position: absolute;
-        top:10rem;
-        left:0rem;
-        width: 100%;
+        position: fixed;
+        top:0rem;
+        left:-20rem;
+        width: 40%;
+        height: 100%;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        flex-direction: column;
+        background-color: var(--black);
+        z-index: 10;
+    }
+    .resume{
+        padding: 0.5rem;
     }
 }
 .extra{
