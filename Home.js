@@ -46,13 +46,13 @@ window.addEventListener('scroll',()=>{
     }
 })
 
-document.getElementById('left__slider').addEventListener('click',()=>{
+document.getElementById('right__slider').addEventListener('click',()=>{
     const root = getComputedStyle(rootElement)
     const i = parseInt(root.getPropertyValue('--i'));
-    if(i>=-1)
+    if(i>=-2)
     rootElement.style.setProperty('--i',`${i-1}`);
 })
-document.getElementById('right__slider').addEventListener('click',()=>{
+document.getElementById('left__slider').addEventListener('click',()=>{
     const root = getComputedStyle(rootElement)
     const i = parseInt(root.getPropertyValue('--i'));
     if (i<0)
