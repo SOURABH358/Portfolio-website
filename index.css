@@ -10,6 +10,7 @@
     --white: #fff;
     --greyish-black:#1A1A23;
     --black:#000;
+    --i:0;
 }
 body{
     min-height: 100vh;
@@ -207,6 +208,14 @@ ul{
     position: relative;
     background-color: var(--red);
     color: var(--greyish-black);
+    overflow: hidden;
+}
+.project__container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    transform: translateX(calc(var(--i)*25%));
+    transition: 1s ease-in-out;
 }
 .project__section h3{
     font-size: 2rem;
@@ -216,6 +225,7 @@ ul{
 .project{
     display: flex;
     gap: 2rem;
+    margin-right: 20rem;
 }
 .project h3{
     font-size: 1.5rem;
@@ -234,6 +244,18 @@ ul{
     display: flex;
     justify-content: center;
     gap: 2rem;
+}
+.sliders{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+.left__slider{
+    left: 10rem;
+}
+.right__slider{
+    right: 10rem;
 }
 @media screen and (max-width:600px) {
     .hamburger{

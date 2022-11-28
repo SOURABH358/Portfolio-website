@@ -10,12 +10,13 @@
 // arrow.addEventListener('click',(e)=>{
 //     floatNavbar.classList.toggle('show')
 // })
-
 const close = document.getElementById('close')
 const hamburger = document.getElementById('hamburger')
 const navBar = document.getElementById('navbar__section')
 const headerSection = document.getElementById('header__section')
 const educationSection = document.getElementById('education__section')
+const rootElement = document.querySelector(':root');
+
 
 hamburger.addEventListener('click',()=>{
     navBar.classList.add('show')
@@ -43,4 +44,17 @@ window.addEventListener('scroll',()=>{
         document.getElementById('school__logo').classList.remove('slideLeft')
         document.getElementById('school__details').classList.remove('slideRight')
     }
+})
+
+document.getElementById('left__slider').addEventListener('click',()=>{
+    const root = getComputedStyle(rootElement)
+    const i = parseInt(root.getPropertyValue('--i'));
+    if(i>=-1)
+    rootElement.style.setProperty('--i',`${i-1}`);
+})
+document.getElementById('right__slider').addEventListener('click',()=>{
+    const root = getComputedStyle(rootElement)
+    const i = parseInt(root.getPropertyValue('--i'));
+    if (i<0)
+    rootElement.style.setProperty('--i',`${i+1}`);
 })
