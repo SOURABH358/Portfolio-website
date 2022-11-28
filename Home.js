@@ -29,10 +29,18 @@ window.addEventListener('scroll',()=>{
     if(scrollY===0){
         headerSection.classList.remove('header__section__scroll')
     }
-    if(educationSection.getBoundingClientRect().top<600){
+    if(educationSection.getBoundingClientRect().top<700){
         educationSection.classList.add('slideDown');
+        document.getElementById('college__logo').classList.add('slideRight')
+        document.getElementById('college__details').classList.add('slideLeft')
+        document.getElementById('school__logo').classList.add('slideLeft')
+        document.getElementById('school__details').classList.add('slideRight')
     }
     else{
         educationSection.classList.remove('slideDown');
+        document.getElementById('college__logo').classList.remove('slideRight')
+        document.getElementById('college__details').classList.remove('slideLeft')
+        document.getElementById('school__logo').classList.remove('slideLeft')
+        document.getElementById('school__details').classList.remove('slideRight')
     }
 })
