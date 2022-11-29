@@ -206,8 +206,8 @@ ul{
     width: 100%;
     padding: 2rem 20%;
     position: relative;
-    background-color: var(--red);
-    color: var(--greyish-black);
+    background-color: var(--black);
+    color: var(--white);
 }
 .hider{
     overflow: hidden;
@@ -257,9 +257,13 @@ ul{
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
+    padding: 1rem;
+    background-color: var(--red);
+    border-radius: 50%;
 }
 .left__slider{
     left: 10rem;
+    transform: translateY(-50%) rotate(180deg);
 }
 .right__slider{
     right: 10rem;
