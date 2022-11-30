@@ -234,6 +234,47 @@ ul {
 }
 
 /* WORK SECTION */
+.work__section{
+    padding: 6rem 10%;
+}
+.work__section h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.work__section h3 span{
+    color: var(--red);
+}
+.work__info{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.company__logo{
+    opacity: 0;
+    transform: translateX(-3rem);
+    transition: 1s ease-in-out;
+}
+.company__logo img{
+    width: 40rem;
+}
+.work__details{
+    opacity: 0;
+    transform: translateX(3rem);
+    transition: 1s ease-in-out;
+}
+.work__details p{
+    font-size: 1.25rem;
+    color: var(--red);
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+.work__details p span{
+    color: var(--white);
+    font-size: 1rem;
+}
 
 /* PROJECT SECTION */
 
@@ -259,7 +300,7 @@ ul {
 }
 
 .project__section h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
 }

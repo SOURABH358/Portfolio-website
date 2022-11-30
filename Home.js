@@ -5,6 +5,8 @@ const headerSection = document.getElementById('header__section')
 const educationSection = document.getElementById('education__section')
 const rootElement = document.querySelector(':root');
 const projectContainer = document.getElementById('project__container');
+const projectSection = document.getElementById('project__section');
+const workSection = document.getElementById('work');
 const projects = [{
     title: "Netflix Clone",
     description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
@@ -64,6 +66,24 @@ window.addEventListener('scroll', () => {
         document.getElementById('college__details').classList.remove('slideLeft')
         document.getElementById('school__logo').classList.remove('slideLeft')
         document.getElementById('school__details').classList.remove('slideRight')
+    }
+    if(workSection.getBoundingClientRect().top<700)
+    {
+        document.querySelector('.company__logo').classList.add('slideRight');
+        document.querySelector('.work__details').classList.add('slideLeft');
+    }
+    else{
+        document.querySelector('.company__logo').classList.remove('slideRight');
+        document.querySelector('.work__details').classList.remove('slideLeft');
+    }
+    if(projectSection.getBoundingClientRect().top<700)
+    {
+        document.querySelector('#project__section h3').classList.add('slideDown');
+        document.querySelector('.work__details').classList.add('slideLeft');
+    }
+    else{
+        document.querySelector('.company__logo').classList.remove('slideRight');
+        document.querySelector('.work__details').classList.remove('slideLeft');
     }
 })
 
