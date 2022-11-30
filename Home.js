@@ -8,11 +8,35 @@ const projectContainer = document.getElementById('project__container');
 const projects = [{
     title: "Netflix Clone",
     description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
-    techstack: ["ReactJs, CSS, Material UI, React Router"],
+    techstack: ["ReactJs", "CSS","Material UI", "React Router"],
     image: "./assets/project/netflix_clone.jpg",
     github: "https://github.com/SOURABH358/netflix-clone",
     live: "https://animated-gaufre-45ae75.netlify.app/"
 },
+{
+    title: "Netflix Clone",
+    description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
+    techstack: ["ReactJs", "CSS","Material UI", "React Router"],
+    image: "./assets/project/netflix_clone.jpg",
+    github: "https://github.com/SOURABH358/netflix-clone",
+    live: "https://animated-gaufre-45ae75.netlify.app/"
+},
+{
+    title: "Netflix Clone",
+    description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
+    techstack: ["ReactJs", "CSS","Material UI", "React Router"],
+    image: "./assets/project/netflix_clone.jpg",
+    github: "https://github.com/SOURABH358/netflix-clone",
+    live: "https://animated-gaufre-45ae75.netlify.app/"
+},
+{
+    title: "Netflix Clone",
+    description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
+    techstack: ["ReactJs", "CSS","Material UI", "React Router"],
+    image: "./assets/project/netflix_clone.jpg",
+    github: "https://github.com/SOURABH358/netflix-clone",
+    live: "https://animated-gaufre-45ae75.netlify.app/"
+}
 ]
 
 hamburger.addEventListener('click', () => {
@@ -70,7 +94,7 @@ function createProjects() {
                 <a href = ${project.live}>Check Live</a>
             </div>
             <div class="techstack">
-                ${project.techstack.map(tech=>`<p>${tech}</p>`)}
+                ${project.techstack.map(tech=>`<p>${tech}</p>`).join("")}
             </div>
         </div>
     </div>`

@@ -206,17 +206,17 @@ ul{
     width: 100%;
     padding: 2rem 20%;
     position: relative;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--red);
+    color: var(--greyish-black);
 }
 .hider{
     overflow: hidden;
     width: 100%;
-    border: 1px solid black;
 }
 .project__container{
     width: fit-content;
-    height: fit-content;
+    
+    padding: 1rem 0;
     display: flex;
     transform: translateX(calc(var(--i)*25%));
     transition: 1s ease-in-out;
@@ -227,17 +227,44 @@ ul{
     margin-bottom: 3rem;
 }
 .project{
-    width: 100%;
+    width: fit-content;
+    height: 30rem;
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    box-shadow: 16px 16px 8px 0 rgba(0,0,0,0.3);
+    color: white;
+    background-color: var(--black);
+}
+.project__links{
     display: flex;
     gap: 2rem;
-    margin: 0 4rem;
+}
+.project__links a{
+    color: var(--red);
+    padding: 0.25rem 1rem;
+    border: 2px solid var(--red);
+    border-radius: 0.25rem;
+}
+.project__links a:hover{
+    color: var(--black);
+    border: 2px solid var(--red);
+    background-color: var(--red);
 }
 .project h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 0;
 }
-
+.project__hero{
+    border: 1px solid var(--white);
+}
 .project__hero img{
     width: 25rem;
+    height: 20rem;
 }
 .project__details{
     width: 30rem;
@@ -245,12 +272,19 @@ ul{
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    line-height: 2rem;
 }
 .techstack{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
+}
+.techstack p{
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: var(--white);
+    color: var(--black);
 }
 .sliders{
     position: absolute;
