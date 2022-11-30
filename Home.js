@@ -6,7 +6,7 @@ const educationSection = document.getElementById('education__section')
 const rootElement = document.querySelector(':root');
 const projectContainer = document.getElementById('project__container');
 const projectSection = document.getElementById('project__section');
-const workSection = document.getElementById('work');
+const workSection = document.getElementById('work__section');
 const projects = [{
     title: "Netflix Clone",
     description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
@@ -54,36 +54,41 @@ window.addEventListener('scroll', () => {
         headerSection.classList.remove('header__section__scroll')
     }
     if (educationSection.getBoundingClientRect().top < 700) {
-        educationSection.classList.add('slideDown');
-        document.getElementById('college__logo').classList.add('slideRight')
-        document.getElementById('college__details').classList.add('slideLeft')
-        document.getElementById('school__logo').classList.add('slideLeft')
-        document.getElementById('school__details').classList.add('slideRight')
+        document.querySelector('.education__title').classList.add('slideVerti')
+        document.getElementById('college__logo').classList.add('slideHori')
+        document.getElementById('college__details').classList.add('slideHori')
+        document.getElementById('school__logo').classList.add('slideHori')
+        document.getElementById('school__details').classList.add('slideHori')
     }
     else {
-        educationSection.classList.remove('slideDown');
-        document.getElementById('college__logo').classList.remove('slideRight')
-        document.getElementById('college__details').classList.remove('slideLeft')
-        document.getElementById('school__logo').classList.remove('slideLeft')
-        document.getElementById('school__details').classList.remove('slideRight')
+        document.querySelector('.education__title').classList.remove('slideVerti')
+        document.getElementById('college__logo').classList.remove('slideHori')
+        document.getElementById('college__details').classList.remove('slideHori')
+        document.getElementById('school__logo').classList.remove('slideHori')
+        document.getElementById('school__details').classList.remove('slideHori')
     }
-    if(workSection.getBoundingClientRect().top<700)
-    {
-        document.querySelector('.company__logo').classList.add('slideRight');
-        document.querySelector('.work__details').classList.add('slideLeft');
-    }
-    else{
-        document.querySelector('.company__logo').classList.remove('slideRight');
-        document.querySelector('.work__details').classList.remove('slideLeft');
-    }
+    
     if(projectSection.getBoundingClientRect().top<700)
     {
-        document.querySelector('#project__section h3').classList.add('slideDown');
-        document.querySelector('.work__details').classList.add('slideLeft');
+        document.querySelector('.project__title').classList.add('slideVerti');
+        document.querySelector('.work__details').classList.add('slideHori');
+        document.querySelector('.company__logo').classList.add('slideHori');
     }
     else{
-        document.querySelector('.company__logo').classList.remove('slideRight');
-        document.querySelector('.work__details').classList.remove('slideLeft');
+        document.querySelector('.project__title').classList.remove('slideVerti');
+        document.querySelector('.company__logo').classList.remove('slideHori');
+        document.querySelector('.work__details').classList.remove('slideHori');
+    }
+    if(workSection.getBoundingClientRect().top<1200)
+    {
+        document.querySelector('.company__logo').classList.add('slideHori');
+        document.querySelector('.work__title').classList.add('slideVerti');
+        document.querySelector('.work__details').classList.add('slideHori');
+    }
+    else{
+        document.querySelector('.work__title').classList.remove('slideVerti');
+        document.querySelector('.company__logo').classList.remove('slideHori');
+        document.querySelector('.work__details').classList.remove('slideHori');
     }
 })
 
