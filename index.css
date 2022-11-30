@@ -331,10 +331,12 @@ ul {
 .techstack p {
     padding: 0.25rem 0.75rem;
     border-radius: 0.25rem;
-    background-color: var(--white);
     color: var(--black);
+    background-color: var(--red);
     font-size: 0.9rem;
+    border: 2px solid var(--red);
 }
+
 
 .sliders {
     position: absolute;
