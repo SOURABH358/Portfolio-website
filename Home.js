@@ -16,10 +16,10 @@ const projects = [{
     live: "https://animated-gaufre-45ae75.netlify.app/"
 },
 {
-    title: "Netflix Clone",
-    description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
-    techstack: ["ReactJs", "CSS","Material UI", "React Router"],
-    image: "./assets/project/netflix_clone.jpg",
+    title: "Crypto Dashboard",
+    description: "A fully responsive Crypto Dashboard built using ReactJs, and Tailwind CSS. The project utilizes an API for data fetching, and displays it using charts.",
+    techstack: ["ReactJs", "CSS","Tailwind CSS", "API"],
+    image: "./assets/project/crypto-dashboard.jpg",
     github: "https://github.com/SOURABH358/netflix-clone",
     live: "https://animated-gaufre-45ae75.netlify.app/"
 },
