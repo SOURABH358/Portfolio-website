@@ -545,6 +545,12 @@ ul {
     .project__details {
         padding: 0 2rem;
     }
+    .work__section{
+        padding: 6rem 2rem;
+    }
+    .work__info{
+        flex-direction: column;
+    }
 }
 
 .slideVerti{
