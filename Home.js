@@ -115,8 +115,8 @@ function createProjects() {
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <div class = "project__links">
-                <a href = ${project.github}>Github</a>
-                <a href = ${project.live}>Check Live</a>
+                <a target="_blank" href = ${project.github}>Github</a>
+                <a target="_blank" href = ${project.live}>Check Live</a>
             </div>
             <div class="techstack">
                 ${project.techstack.map(tech=>`<p>${tech}</p>`).join("")}

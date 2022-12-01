@@ -336,6 +336,7 @@ ul {
     padding: 0.25rem 1rem;
     border: 2px solid var(--red);
     border-radius: 0.25rem;
+    /* box-shadow: 2px 2px 4px 0 var(--red); */
 }
 
 .project__links a:hover {
@@ -352,6 +353,7 @@ ul {
 
 .project__hero {
     border: 1px solid var(--white);
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
 .project__hero img {
@@ -382,6 +384,7 @@ ul {
     background-color: var(--red);
     font-size: 0.9rem;
     border: 2px solid var(--red);
+    /* box-shadow: 2px 2px 4px 0 var(--red); */
 }
 
 
@@ -391,13 +394,13 @@ ul {
     transform: translateY(-50%);
     z-index: 100;
     padding: 1rem;
-    background-color: var(--red);
+    background-color: var(--black);
     border-radius: 50%;
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
 .left__slider {
     left: 10rem;
-    transform: translateY(-50%) rotate(180deg);
 }
 
 .right__slider {
