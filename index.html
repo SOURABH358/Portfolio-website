@@ -18,19 +18,19 @@
             <div id="close" class="close">
                 <img src="./assets/icon-close.svg" alt="hamburger" />
             </div>
-            <a href="#">Home</a>
-            <a href="#">Education</a>
-            <a href="#">Work</a>
+            <a href="#home">Home</a>
+            <a href="#education__section">Education</a>
+            <a href="#work__section">Work</a>
             <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#project__section">Projects</a>
+            <a href="#contact__section">Contact</a>
         </nav>
         <div class="resume">
             <img src="./assets/arrow-down.png" alt="arrow" />Download Resume
         </div>
     </header>
     <main class="main__section">
-        <section class="hero__section">
+        <section id = "home" class="hero__section">
             <div class="hero__content">
                 <p class="hero__content__title"><span>Hi</span>, I am Sourabh Yadav</p>
                 <p class="hero__content__subtitle">
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section class="footer__section">
+        <section id = "contact__section" class="footer__section">
             <form class="contact__form">
                 <h2>Contact Me</h2>
                 <input class="viewer__email" type="email" placeholder="Your email e.g: abc@gmail.com" autocomplete="off"/>
@@ -115,8 +115,13 @@
             </form>
         </section>
     </main>
-    <footer>
-
+    <footer class="portfolio__footer">
+        <div class="social__links">
+            <p>github</p>
+            <p>twitter</p>
+            <p>linked In</p>
+        </div>
+        <div style="text-align: center;">Copyright @2022 Sourabh Yadav</div>
     </footer>
     <script src="./Home.js"></script>
 </body>

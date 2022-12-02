@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --violet: #AF69EF;
     --red: #FE7171;
@@ -119,6 +121,7 @@ ul {
     padding-left: 15%;
     /* align-items: center; */
     gap: 10rem;
+   
 }
 
 .hero__img {
@@ -434,6 +437,7 @@ ul {
     font-size: 1.15rem;
     padding: 0 1rem;
     color: var(--white);
+    letter-spacing: 1px;
 }
 .viewer__message{
     width: 100%;
@@ -444,13 +448,29 @@ ul {
     font-size: 1.15rem;
     padding: 0.5rem 1rem;
     color: var(--white);
+    letter-spacing: 1px;
 }
 .contact__form__btn{
     width: 7rem;
     height: 2.75rem;
+    font-size: 1.1rem;
     background-color: var(--red);
     border: none;
     border-radius: 0.5rem;
+}
+.portfolio__footer{
+    padding: 6rem 20%;
+    background-color: var(--red);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.social__links{
+    display: flex;
+    gap: 3rem;
+
 }
 @media screen and (max-width:600px) {
     .hamburger {
