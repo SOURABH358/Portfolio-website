@@ -406,7 +406,11 @@ ul {
 .right__slider {
     right: 10rem;
 }
-
+.footer__section{
+    background-color: var(--black);
+    padding: 6rem 20%;
+    color: var(--white);
+}
 @media screen and (max-width:600px) {
     .hamburger {
         display: block;
