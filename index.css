@@ -159,8 +159,8 @@ ul {
 
 /* Education Section */
 .education__section {
-    height: 80vh;
     width: 100%;
+    padding: 4rem 0;
     background-color: var(--red);
     color: var(--greyish-black)
 }
@@ -171,7 +171,6 @@ ul {
     transition: 1s;
     text-align: center;
     font-size: 2.5rem;
-    padding: 1rem 0;
 }
 
 .education__container {
@@ -235,7 +234,7 @@ ul {
 
 /* WORK SECTION */
 .work__section{
-    padding: 6rem 10%;
+    padding: 4rem 10%;
 }
 .work__title{
     font-size: 2.5rem;
@@ -283,7 +282,7 @@ ul {
 
 .project__section {
     width: 100%;
-    padding: 2rem 20%;
+    padding: 4rem 20%;
     position: relative;
     background-color: var(--red);
     color: var(--greyish-black);
@@ -410,6 +409,48 @@ ul {
     background-color: var(--black);
     padding: 6rem 20%;
     color: var(--white);
+}
+.contact__form{
+    padding: 4rem 10rem;
+    border: 2px solid var(--red);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.contact__form h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--re);
+}
+.viewer__email{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 0.75rem;
+    height: 3rem;
+    font-size: 1.15rem;
+    padding: 0 1rem;
+    color: var(--white);
+}
+.viewer__message{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 0.75rem;
+    height: 15rem;
+    font-size: 1.15rem;
+    padding: 0.5rem 1rem;
+    color: var(--white);
+}
+.contact__form__btn{
+    width: 7rem;
+    height: 2.75rem;
+    background-color: var(--red);
+    border: none;
+    border-radius: 0.5rem;
 }
 @media screen and (max-width:600px) {
     .hamburger {
