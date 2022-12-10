@@ -9,7 +9,7 @@ const projectSection = document.getElementById('project__section');
 const workSection = document.getElementById('work__section');
 const projects = [{
         title: "Chat Application",
-        description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
+        description: "A full stack chat Application created using React and beautifully styled with SCSS. It covers authentication, maintaining users chats, user info with realtime chatting, everything managed using Firebase ",
         techstack: ["ReactJs", "SCSS","React", "React Router", "Firebase"],
         image: "./assets/project/chat__app.jpg",
         github: "https://github.com/SOURABH358/Chat-Application",
@@ -33,11 +33,11 @@ const projects = [{
 },
 
 {
-    title: "Netflix Clone",
-    description: "A fully responsive Netflix clone, created using ReactJs. For navigation inside the website I have used React router. The entire website is styled using CSS and Material UI. The project is hosted on netlify and developed using create react app.",
-    techstack: ["ReactJs", "CSS","Material UI", "React Router"],
-    image: "./assets/project/netflix_clone.jpg",
-    github: "https://github.com/SOURABH358/netflix-clone",
+    title: "Portfolio Website",
+    description: "A fully responsive Portfolio Website, created using HTML5, CSS and Javascript. Covers a detailed info about me and my work do contact me if you find my profile interesting for any job related info.",
+    techstack: ["HTML5", "CSS", "Javascript"],
+    image: "./assets/project/portfolio.jpg",
+    github: "https://github.com/SOURABH358/Portfolio-website",
     live: "https://animated-gaufre-45ae75.netlify.app/"
 }
 ]
