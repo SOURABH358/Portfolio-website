@@ -470,7 +470,7 @@ ul {
 .social__links{
     display: flex;
     gap: 3rem;
-
+    color: var(--black);
 }
 @media screen and (max-width:600px) {
     .hamburger {
