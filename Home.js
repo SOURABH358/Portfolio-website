@@ -28,8 +28,8 @@ const projects = [{
     description: "A fully responsive Crypto Dashboard built using ReactJs, and Tailwind CSS. The project utilizes an API for data fetching, and displays it using charts.",
     techstack: ["ReactJs", "CSS","Tailwind CSS", "API"],
     image: "./assets/project/crypto-dashboard.jpg",
-    github: "https://github.com/SOURABH358/netflix-clone",
-    live: "https://animated-gaufre-45ae75.netlify.app/"
+    github: "https://github.com/SOURABH358/crypto-dashboard",
+    live: "https://unrivaled-cuchufli-9ec2b2.netlify.app/"
 },
 
 {
@@ -38,7 +38,7 @@ const projects = [{
     techstack: ["HTML5", "CSS", "Javascript"],
     image: "./assets/project/portfolio.jpg",
     github: "https://github.com/SOURABH358/Portfolio-website",
-    live: "https://animated-gaufre-45ae75.netlify.app/"
+    live: "https://shiny-melba-397fed.netlify.app/"
 }
 ]
 
