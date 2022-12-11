@@ -16,6 +16,8 @@ html{
     --greyish-black: #1A1A23;
     --black: #000;
     --i: 0;
+    --len-1: 40rem;
+    --len-2: 37rem;
 }
 
 body {
@@ -119,7 +121,7 @@ ul {
 .hero__section {
     width: 100%;
     display: flex;
-    padding-left: 15%;
+    padding-left: 10%;
     /* align-items: center; */
     gap: 10rem;
    
@@ -136,7 +138,7 @@ ul {
 }
 .hero__content {
     padding-top: 10rem;
-    width: 35rem;
+    width: 40rem;
     font-size: 3rem;
 
 }
@@ -151,19 +153,40 @@ ul {
     color: var(--red);
 }
 
-.hero__content__subtitle {
+.hero__content__subtitle{
+    position: relative;
     margin-top: 3rem;
-    margin-left: 2rem;
     line-height: 2rem;
-    font-size: 1.25rem;
-
-    /* animation: hero__content 1s ease-in-out 0.5s 1 forwards; */
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+.cover-1{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    content: '';
+    background-color: var(--black);
+    animation: word_1 20s linear 0s infinite;
+    border-left: 3px solid white;
+}
+.cover-2{
+    position: absolute;
+    top:2rem;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    content: '';
+    background-color: var(--black);
+    animation: word_2 20s linear 0s infinite;
+    border-left: 3px solid white;
 }
 .skills{
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .skills img{
-    margin: 0 0.5rem;
+    margin: 0 1rem;
     transition: 0.5s ease-in-out;
 }
 .skills img:hover{
@@ -575,21 +598,32 @@ ul {
     }
 
     .hero__content {
+        padding: 0;
+        padding-top: 1rem;
         width: 100%;
         font-size: 2rem;
         text-align: center;
     }
 
     .hero__content__subtitle {
-        margin:0;
-        font-size: 1.1rem;
-        letter-spacing: 0.1rem;
+        margin: 0;
+        margin-top: 3rem;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
     }
-
+    
     .resume {
         padding: 0.5rem;
     }
-
+    .cover-1{
+        height: 1.5rem;
+        --len-1: 35rem;
+    }
+    .cover-2{
+        top: 1.5rem;
+        height: 1.5rem;
+        --len-2: 31rem;
+    }
     .education__section {
         width: 100%;
         overflow: hidden;
@@ -680,7 +714,7 @@ ul {
         border: none;
     }
     .skills{
-        margin-top: 8rem;
+        margin-top: 4rem;
     }
     .skills img{
         margin: 0 1rem;
@@ -739,7 +773,63 @@ ul {
         opacity: 1;
     }
 }
+@keyframes word_1 {
+ 0%{
+    border-left: 3px solid white;
+    left: 0;
+ }
+ 25%{
+    border-left: 3px solid white;
+    left: var(--len-1);
+ }
+ 26%{
+    border:none;
+    left: var(--len-1);
+ }
+ 74%{
+    border:none;
+    left: var(--len-1)
+ }
+ 75%{
+    border-left: 3px solid var(--white);
+    left: var(--len-1)
+ }
+ 99%{
+    border-left: 3px solid var(--white);
+    left: 0;
+ }
+}
+@keyframes word_2 {
+ 0%{
+    border:none;
+    left: 0;
+ }  
+ 25%{
+    border: none;
+    left: 0;
+ } 
+ 26%{
+    left: 0;
+    border-left: 3px solid var(--white);
+ }
+ 50%{
+    left: var(--len-2);
+    border-left: 3px solid var(--white);
+ }
+ 74%{
+    left: 0;
+    border-left: 3px solid white;
+ }
+ 75%{
+    border: none;
+    left: 0;
+ }
+ 100%{
+    border: none;
+    left: 0;
+ }
 
+}
 
 /* 
 .arrow{
